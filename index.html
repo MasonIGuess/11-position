@@ -4,13 +4,24 @@
     <meta charset="utf-8">
     <title>Position</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'pxy5vmr',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 </head>
 
 <body>
     <header>
         <h1>CSS Positioning: Drop Down Menu</h1>
-        <p>
-            <code>position: realative and </code>
+        <p class="align">
+            <code>position: realative</code>
+           and
             <code>position: absolute</code>
         </p>
 
@@ -32,11 +43,11 @@
     </header>
 
     <main>
-        <p>The parent list item needs position: relative so that the child submenu can be positioned with position: absolute relative to it — not relative to the entire page.</p>
+        <p>The parent list item needs <code>position: relative</code> so that the child submenu can be positioned with <code>position: absolute</code> relative to it — not relative to the entire page.</p>
 
-<p>The submenu (a nested ul inside one of the li elements) is hidden by default with display: none. When the user hovers over the parent list item, the submenu is shown with display: block.</p>
+<p>The submenu (a nested ul inside one of the li elements) is hidden by default with <code>display: none</code>. When the user hovers over the parent list item, the submenu is shown with <code>display: block</code>.</p>
 
-<p>The key concept: position: absolute places an element relative to its nearest ancestor that has position: relative. Without that ancestor, it positions relative to the page — which is almost never what you want.</p>
+<p>The key concept: <code>position: absolute</code> places an element relative to its nearest ancestor that has <code>position: relative</code>. Without that ancestor, it positions relative to the page — which is almost never what you want.</p>
     </main>
 
     <footer class="footer-nav">

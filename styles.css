@@ -1,15 +1,39 @@
 html {
     background-color: rgb(220, 220, 220);
+     font-family: "cora", sans-serif;
+font-weight: 400;
+font-style: normal;
+
 }
 
 .site-nav {
     background-color: rgb(91, 182, 0);
 }
 
+h1 {
+    font-family: "cora", sans-serif;
+font-weight: 700;
+font-style: normal;
+padding: 0px 350px 0px 350px;
+}
+
+.align {
+    padding: 0px 350px 0px 350px;
+}
+
+main {
+    font-family: "cora", sans-serif;
+font-weight: 400;
+font-style: normal;
+padding: 0px 350px 0px 350px;
+}
+
 .site-links {
     display: flex;
     list-style-type: none;
-    padding: 0;
+    padding: 10px 350px 10px 350px;
+    margin-top: 20px;
+    
 }
 
 .site-link {
@@ -17,10 +41,13 @@ html {
     padding: 10px;
     color: white;
     text-decoration: none;
+
 }
 
 .site-link:hover {
-    background-color: rgb(41, 82, 0);;
+    background-color: rgb(41, 82, 0);
+    padding: 10px;
+
 }
 
 .dropdown {
@@ -55,4 +82,12 @@ html {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+code {
+    background-color: rgb(255, 176, 229);
+    color: rgb(152, 25, 133);
+    padding: 3px;
+    border-radius: 5px;
+    
 }
